@@ -32,25 +32,36 @@
         android:id="@+id/etNumber2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="104dp"
-        tools:layout_editor_absoluteY="396dp" />
+        android:hint="Zadej číslo"
+        android:inputType="numberSigned|numberDecimal"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerOperation"/>
 
     <Button
         android:id="@+id/btnCalculate"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:gravity="start"
+        android:onClick="calculate"
         android:text="="
-        tools:layout_editor_absoluteX="116dp"
-        tools:layout_editor_absoluteY="519dp" />
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNumber2"/>
 
 
     <TextView
         android:id="@+id/labelResult"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textSize="36sp"
+        android:textStyle="bold"
         android:text="TextView"
-        tools:layout_editor_absoluteX="113dp"
-        tools:layout_editor_absoluteY="613dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalculate"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
